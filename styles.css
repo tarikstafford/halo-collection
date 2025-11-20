@@ -1,0 +1,38 @@
+/* Custom styles for The Halo Collection */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.halo-gradient {
+  background: linear-gradient(135deg, #C9A139, #E7D292);
+}
+
+.hero-bg {
+  background-image: url('https://static.wixstatic.com/media/6a0d72_70ac4b774de44b3fa3c5ba306cf8b740~mv2.jpg/v1/fill/w_1500,h_900,al_c,q_80,enc_auto/DSC_0371.jpg');
+}
+
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(12, 27, 42, 0.75) 0%, rgba(12, 27, 42, 0.35) 50%, rgba(12, 27, 42, 0.75) 100%);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile menu transitions */
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+#mobile-menu.show {
+  display: block;
+}
