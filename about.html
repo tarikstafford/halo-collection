@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Story — The Halo Collection</title>
+  <meta name="description" content="Meet Sharona and Jeff Hurmuses, the founders of The Halo Collection. With over 20 years of hospitality experience from Villa Hurmuses in Mykonos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            haloNavy: '#0c1b2a',
+            haloGoldStart: '#C9A139',
+            haloGoldEnd: '#E7D292',
+            haloOffWhite: '#f7f7f5',
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'ui-serif', 'Georgia', 'serif']
+          },
+          boxShadow: {
+            'soft': '0 10px 24px rgba(12,27,42,0.08)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-haloNavy bg-white">
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 backdrop-blur bg-white/60 border-b border-black/5">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <!-- Crescent Logo -->
+        <div class="relative w-8 h-8" aria-label="The Halo Collection crescent logo">
+          <svg viewBox="0 0 100 100" class="absolute inset-0">
+            <defs>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C9A139" />
+                <stop offset="100%" stop-color="#E7D292" />
+              </linearGradient>
+            </defs>
+            <path d="M70 10a45 45 0 1 0 0 80 40 40 0 1 1 0-80z" fill="url(#goldGrad)" />
+          </svg>
+        </div>
+        <div class="leading-tight">
+          <div class="text-xl font-serif">The Halo Collection</div>
+          <div class="text-[11px] tracking-[0.25em] uppercase text-neutral-500">By Hurmuses</div>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="index.html#residences" class="hover:opacity-70">The Collection</a>
+        <a href="about.html" class="hover:opacity-70 font-medium">Our Story</a>
+        <a href="index.html#contact" class="hover:opacity-70">Contact</a>
+        <a href="index.html#contact" class="rounded-2xl px-5 py-2 bg-haloNavy text-white inline-flex items-center gap-2 shadow-soft">Book Direct
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+          </svg>
+        </a>
+      </div>
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-black/5 bg-white">
+      <div class="px-4 py-2 flex flex-col gap-2">
+        <a href="index.html#residences" class="py-2 hover:opacity-70">The Collection</a>
+        <a href="about.html" class="py-2 hover:opacity-70 font-medium">Our Story</a>
+        <a href="index.html#contact" class="py-2 hover:opacity-70">Contact</a>
+        <a href="index.html#contact" class="rounded-2xl px-5 py-2 bg-haloNavy text-white inline-flex items-center justify-center gap-2 shadow-soft mt-2">Book Direct
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="py-20 md:py-28 bg-haloOffWhite">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="fade-in">
+        <h1 class="text-4xl md:text-6xl font-serif">Our Story</h1>
+        <p class="mt-4 text-lg md:text-xl text-neutral-600">A new chapter in hospitality, rooted in 20 years of warmth and care</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- STORY CONTENT -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="prose prose-lg max-w-none">
+        <div class="fade-in">
+          <p class="text-xl text-neutral-700 leading-relaxed">
+            Hello and welcome! I'm <strong>Sharona Hurmuses</strong>, and together with my husband <strong>Jeff</strong>, we're the proud co-founders of The Halo Collection—a heartfelt continuation of our journey in hospitality, now rooted in the vibrant neighborhoods of Athens.
+          </p>
+        </div>
+
+        <div class="fade-in mt-8">
+          <h2 class="text-3xl font-serif text-haloNavy mb-4">From Mykonos to Athens</h2>
+          <p class="text-neutral-700 leading-relaxed">
+            For over 20 years, we poured our souls into <strong>Villa Hurmuses</strong> in Mykonos, creating a place where guests felt not just welcomed, but genuinely cared for. When it came time to say goodbye to that beloved villa, we knew we weren't finished—we were simply ready for a new chapter. And so, The Halo Collection was born.
+          </p>
+        </div>
+
+        <div class="fade-in mt-8">
+          <h2 class="text-3xl font-serif text-haloNavy mb-4">Three Homes, Three Stories</h2>
+          <p class="text-neutral-700 leading-relaxed">
+            In <strong>2024</strong>, we launched three thoughtfully designed boutique apartments and home: <strong>The Hive</strong> in Kypseli, full of vintage charm and buzzing city life; <strong>The Hill</strong>, a quiet, cozy nest tucked near the foothills of Lykavittos; and <strong>The Silk House</strong> in Akidemia Platonos, where creative spirit and old-world textures meet. Each space is a reflection of who we are—warm, stylish, and just a little bit unexpected.
+          </p>
+        </div>
+
+        <div class="fade-in mt-12 grid md:grid-cols-2 gap-8">
+          <div class="rounded-2xl p-6 bg-haloOffWhite border border-black/10">
+            <h3 class="text-2xl font-serif text-haloNavy mb-3">About Sharona</h3>
+            <p class="text-neutral-700 leading-relaxed">
+              My background as a former <strong>Singapore Airlines Flight Attendant</strong> and Brand Ambassador instilled in me a deep love for service, details, and the power of a personal touch.
+            </p>
+          </div>
+          <div class="rounded-2xl p-6 bg-haloOffWhite border border-black/10">
+            <h3 class="text-2xl font-serif text-haloNavy mb-3">About Jeff</h3>
+            <p class="text-neutral-700 leading-relaxed">
+              Jeff brings his <strong>Greek-Canadian roots</strong>, his builder's eye and his calm, grounded energy to everything we do. With a meticulous eye for detail and a practical mindset, he ensures each project is not only beautiful but thoughtfully executed from the ground up.
+            </p>
+          </div>
+        </div>
+
+        <div class="fade-in mt-8">
+          <p class="text-neutral-700 leading-relaxed">
+            We're also parents to <strong>three incredible daughters</strong>, which keeps life full, fun, and wonderfully unpredictable.
+          </p>
+        </div>
+
+        <div class="fade-in mt-12 p-8 rounded-3xl halo-gradient text-white">
+          <h2 class="text-3xl font-serif text-haloNavy mb-4">Our Mission</h2>
+          <p class="text-white/90 leading-relaxed text-lg">
+            We've created homes that welcome guests not just as visitors, but as friends. Whether you're here for a weekend escape or an extended stay, our goal is simple: to make you feel at ease, inspired, and at home. The Halo Collection isn't just about beautiful places—it's about connection, comfort, and the little moments that make travel magical.
+          </p>
+        </div>
+
+        <div class="fade-in mt-12 text-center">
+          <p class="text-2xl font-serif text-haloNavy mb-6">We can't wait to welcome you.</p>
+          <p class="text-neutral-600 mb-8">— Sharona & Jeff Hurmuses</p>
+          <a href="index.html#contact" class="rounded-2xl px-8 py-4 bg-haloNavy text-white inline-flex items-center gap-2 shadow-soft">Get in Touch
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-12 pb-10 border-t border-black/5 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2">
+          <div class="relative w-[26px] h-[26px]">
+            <svg viewBox="0 0 100 100" class="absolute inset-0">
+              <linearGradient id="goldGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C9A139" />
+                <stop offset="100%" stop-color="#E7D292" />
+              </linearGradient>
+              <path d="M70 10a45 45 0 1 0 0 80 40 40 0 1 1 0-80z" fill="url(#goldGradFooter)" />
+            </svg>
+          </div>
+          <span class="font-serif">The Halo Collection</span>
+        </div>
+        <p class="mt-3 text-neutral-600 max-w-xs">Boutique Athens stays across Kypseli, Lycabettus & Akadimia Platonos.</p>
+      </div>
+      <div>
+        <div class="font-medium mb-2">Explore</div>
+        <ul class="space-y-1 text-neutral-600">
+          <li><a href="index.html#residences" class="hover:opacity-70">The Collection</a></li>
+          <li><a href="about.html" class="hover:opacity-70">Our Story</a></li>
+          <li><a href="index.html#contact" class="hover:opacity-70">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-medium mb-2">Contact</div>
+        <ul class="space-y-1 text-neutral-600">
+          <li><a href="mailto:shurmuses@gmail.com" class="hover:opacity-70">shurmuses@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-medium mb-2">Follow</div>
+        <ul class="space-y-1 text-neutral-600">
+          <li><a href="https://www.instagram.com/thehalocollectionbyhurmuses/" target="_blank" rel="noopener" class="hover:opacity-70">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61564418070323" target="_blank" rel="noopener" class="hover:opacity-70">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 mt-10 text-xs text-neutral-500">© <span id="year"></span> The Halo Collection by Hurmuses. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
